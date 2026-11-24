@@ -1,0 +1,111 @@
+name: MUSITU FMI Billing Post-Deploy Readback
+
+on:
+  push:
+    branches: [fmi-billing-binding-20260912-ephemeral]
+    paths: ['.github/workflows/fmi-billing-postdeploy-readback.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      API: https://api.cloudflare.com/client/v4
+      AID: 93f395f5121954671f92fffa453d6b61
+      DBID: a03dc12d-8206-47be-b904-1f24e4e37d91
+      AUTH: mft-phase8-external-authority
+      TRANSPORT: mft-paynow-transport-gateway
+      EDGE: mft-fmi-global-edge
+      BILLING: mft-fmi-billing
+      ADAPTER: mft-fmi-modal-adapter
+      PUBLIC: https://mft-fmi-global-edge.mft-education-nexus-93f395f5.workers.dev
+      REF: FMI-MTYO41LA-CD6240DEB118
+      AUTH_SHA: ec2294e7bb9109a8b7b96ecfbc5c1bdc85c141d4aed501eed7a2c1cca1a94f26
+      TRANSPORT_SHA: e3c6db1ced0ab7e8e9844364b69777dfc7a15c8c2daf08b5bd330e035979f4ac
+      EDGE_SHA: 8b96455c0237dad85312606dc0c984efa4d278726924edf94f4abab4c2b9e891
+      BILLING_SHA: cd55b2b7b34bc5f73c394eddebd9edbc22690250b4ab7aff36a209064a3b9454
+    steps:
+      - name: Verify current live billing and hardened-edge state independently
+        env:
+          CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
+          CLOUDFLARE_GLOBAL_API_KEY: ${{ secrets.CLOUDFLARE_GLOBAL_API_KEY }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import email,hashlib,json,os,urllib.error,urllib.parse,urllib.request,uuid
+          H={'X-Auth-Email':os.environ['CLOUDFLARE_EMAIL'],'X-Auth-Key':os.environ['CLOUDFLARE_GLOBAL_API_KEY']}
+          API=os.environ['API']; AID=os.environ['AID']; DBID=os.environ['DBID']; BASE=os.environ['PUBLIC'].rstrip('/'); REF=os.environ['REF']
+          def raw(url,method='GET',headers=None,body=None):
+              q=urllib.request.Request(url,headers=headers or {},method=method,data=body)
+              try:
+                  with urllib.request.urlopen(q,timeout=35) as r:return r.status,r.headers,r.read()
+              except urllib.error.HTTPError as e:return e.code,e.headers,e.read()
+          def get(path):
+              code,h,b=raw(API+path,headers=H); assert code==200,(path,code,b[:200]); return h,b
+          def src(n):
+              h,b=get(f'/accounts/{AID}/workers/scripts/{urllib.parse.quote(n,safe="")}'); ct=h.get('content-type','')
+              if 'multipart/' not in ct.lower():return b
+              m=email.message_from_bytes((f'Content-Type: {ct}\r\nMIME-Version: 1.0\r\n\r\n').encode()+b); p=[]
+              for x in m.walk():
+                  if x.is_multipart():continue
+                  d=x.get_payload(decode=True) or b''
+                  if any(k in d for k in (b'export default',b'addEventListener',b'fetch(')):p.append(d)
+              assert len(p)==1,(n,len(p)); return p[0]
+          def settings(n):
+              _,b=get(f'/accounts/{AID}/workers/scripts/{urllib.parse.quote(n,safe="")}/settings'); return {x.get('name'):x for x in ((json.loads(b).get('result') or {}).get('bindings') or []) if isinstance(x,dict)}
+          def subdomain(n):
+              _,b=get(f'/accounts/{AID}/workers/scripts/{urllib.parse.quote(n,safe="")}/subdomain'); return json.loads(b).get('result') or {}
+          def d1(sql,params=None):
+              o={'sql':sql}
+              if params is not None:o['params']=params
+              hh=dict(H);hh['Content-Type']='application/json'
+              code,_,b=raw(f'{API}/accounts/{AID}/d1/database/{DBID}/query','POST',hh,json.dumps(o,separators=(',',':')).encode());assert code==200,(code,b[:200])
+              x=json.loads(b);assert x.get('success') is not False,x.get('errors'); rows=[]
+              for r in x.get('result') or []:assert r.get('success') is True,r;rows.extend(r.get('results') or [])
+              return rows
+          def public(path,method='GET',body=None,bearer=None):
+              h={'Accept':'application/json','User-Agent':'MUSITU-FMI-Billing-Independent-Readback/2.0'}
+              if body is not None:h['Content-Type']='application/json'
+              if bearer is not None:h['Authorization']='Bearer '+bearer
+              code,rh,b=raw(BASE+path,method,h,body)
+              try:x=json.loads(b or b'{}')
+              except:x={}
+              return code,x,{k.lower():v for k,v in rh.items()}
+          assert hashlib.sha256(src(os.environ['AUTH'])).hexdigest()==os.environ['AUTH_SHA']
+          assert hashlib.sha256(src(os.environ['TRANSPORT'])).hexdigest()==os.environ['TRANSPORT_SHA']
+          assert hashlib.sha256(src(os.environ['EDGE'])).hexdigest()==os.environ['EDGE_SHA']
+          assert hashlib.sha256(src(os.environ['BILLING'])).hexdigest()==os.environ['BILLING_SHA']
+          eb=settings(os.environ['EDGE']); bb=settings(os.environ['BILLING'])
+          assert eb.get('FMI_BILLING',{}).get('service')==os.environ['BILLING']
+          assert eb.get('FMI_DB',{}).get('id')==DBID
+          assert eb.get('FMI_KERNEL',{}).get('service')==os.environ['ADAPTER']
+          assert bb.get('FMI_DB',{}).get('id')==DBID
+          assert bb.get('PAYMENT_AUTHORITY',{}).get('service')==os.environ['AUTH']
+          assert bb.get('PAYNOW_TRANSPORT',{}).get('service')==os.environ['TRANSPORT']
+          assert bb.get('FMI_AUTHORITY_BRIDGE_TOKEN',{}).get('type')=='secret_text'
+          assert bb.get('FMI_TRANSPORT_BRIDGE_TOKEN',{}).get('type')=='secret_text'
+          assert subdomain(os.environ['BILLING']).get('enabled') is False
+          assert subdomain(os.environ['ADAPTER']).get('enabled') is False
+          required={'strict-transport-security','x-content-type-options','x-frame-options','content-security-policy','referrer-policy','permissions-policy'}
+          def header_gate(h):
+              assert required.issubset(set(h)),sorted(required-set(h));assert h['x-content-type-options'].lower()=='nosniff';assert h['x-frame-options'].upper()=='DENY';assert h['referrer-policy'].lower()=='no-referrer'
+          nonce=uuid.uuid4().hex
+          hc,health,hh=public('/healthz?readback='+nonce); assert hc==200 and health.get('authority')=='PAPER_SHADOW_ONLY'; header_gate(hh)
+          bc,bh,bhh=public('/v1/billing/healthz?readback='+nonce); assert bc==200 and bh.get('ok') is True and bh.get('settlement_certified') is False; header_gate(bhh)
+          cc,cat,ch=public('/v1/billing/catalog?readback='+nonce); assert cc==200; plans=cat.get('plans') or {}; assert (plans.get('FOUNDING') or {}).get('amount_cents')==4900 and (plans.get('PRO') or {}).get('amount_cents')==14900; header_gate(ch)
+          intents=d1('SELECT reference,customer_id,plan,amount_cents,currency,status,paynow_reference,completed_at FROM billing_checkout_intents WHERE reference=?1 LIMIT 2',[REF]); assert len(intents)==1,intents
+          i=intents[0]; assert i.get('plan')=='FOUNDING' and int(i.get('amount_cents',-1))==4900 and i.get('currency')=='USD' and i.get('status')=='pending' and not i.get('completed_at')
+          customer=d1('SELECT id,plan,status FROM customers WHERE id=?1 LIMIT 2',[i['customer_id']]); assert len(customer)==1 and customer[0].get('plan')=='FREE' and customer[0].get('status')=='active'
+          subs=d1("SELECT count(*) AS n FROM billing_subscriptions WHERE customer_id=?1 AND status='active'",[i['customer_id']]); active_subs=int(subs[0]['n'])
+          acts=d1("SELECT count(*) AS n FROM lifecycle_events WHERE customer_id=?1 AND event_name='PLAN_ACTIVATED'",[i['customer_id']]); activations=int(acts[0]['n'])
+          total=d1('SELECT count(*) AS n FROM billing_checkout_intents WHERE reference=?1',[REF]); ref_count=int(total[0]['n'])
+          assert active_subs==0 and activations==0 and ref_count==1
+          before_total=int(d1('SELECT count(*) AS n FROM billing_checkout_intents')[0]['n'])
+          uc,u,uh=public('/v1/billing/checkout','POST',b'{"plan":"FOUNDING"}'); assert uc==401; header_gate(uh)
+          after_total=int(d1('SELECT count(*) AS n FROM billing_checkout_intents')[0]['n']); assert after_total==before_total
+          print(json.dumps({'gate':'PASS','edge_sha256':os.environ['EDGE_SHA'],'billing_sha256':os.environ['BILLING_SHA'],'security_headers':'PASS','provider_bound':True,'billing_worker_private':True,'billing_health':'PASS','catalog':'PASS','unauthorized_checkout':'REJECTED','checkout_reference':REF,'checkout_intent_count_for_reference':1,'intent_status':'pending','customer_plan':'FREE','active_paid_subscription_count':0,'plan_activated_event_count':0,'provider_checkout_created_by_readback':False,'payment_action_executed':False,'real_money_settlement_tested':False,'real_money_settlement_certified':False,'secret_values_read_or_logged':False},sort_keys=True))
+          PY
