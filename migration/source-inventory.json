@@ -43,10 +43,11 @@
   ],
   "verified_destination_before_manifest": "3aa4aadd6a394919ee8984126a89eb97fdd52aaa",
   "counts": {
-    "IMPORTED_EXACT_BLOB": 149,
+    "IMPORTED_EXACT_BLOB": 159,
     "PUBLIC_REDACTED_EVIDENCE": 1,
     "BLOCKED_UPSTREAM_CHUNK_INTEGRITY": 10,
-    "HELD_LEGACY_ARCHIVE_UNREVIEWED": 25
+    "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE": 2,
+    "HELD_LEGACY_ARCHIVE_UNREVIEWED": 13
   },
   "records": [
     {
@@ -3623,8 +3624,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/000.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 0,
+      "archive_length": 12000
     },
     {
       "path": "fmi_launch_transport/001.b64",
@@ -3637,8 +3640,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/001.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 12000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/002.b64",
@@ -3651,8 +3656,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/002.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 26000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/003.b64",
@@ -3665,8 +3672,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/003.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 40000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/004.b64",
@@ -3679,8 +3688,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/004.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 54000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/005.b64",
@@ -3693,8 +3704,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/005.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 68000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/006.b64",
@@ -3707,8 +3720,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/006.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 82000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/007.b64",
@@ -3721,8 +3736,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/007.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 96000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/008.b64",
@@ -3735,8 +3752,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/008.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 110000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport/009.b64",
@@ -3750,7 +3769,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 124000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 5027,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport/010.b64",
@@ -3763,8 +3788,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport/010.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 138000,
+      "archive_length": 9176
     },
     {
       "path": "fmi_launch_transport/012.b64",
@@ -3778,7 +3805,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 166000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 21591,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport_v2/000.b64",
