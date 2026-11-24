@@ -1,0 +1,32 @@
+{
+  "schema": "musitu.fmi.v9-4-recovery.v1",
+  "source_archive": "MUSITU_FMI_V9_3_RIGHTS_ATTRIBUTION_ENFORCEMENT_CANDIDATE_20260913_1148.zip",
+  "source_archive_bytes": 1125879,
+  "source_archive_sha256": "80e31e274705afb9acadc36fdfd736200dd7f4ba327d6811c730b5217703db59",
+  "archive_zip_integrity": "PASS (local extraction and CRC)",
+  "original_transport_status": "DAMAGED_CHUNK_02; original retained upstream",
+  "recovery": "Original four payload files recovered directly, every SHA-256 matches original transport payload_manifest. Not the original compressed tar byte sequence.",
+  "payload": {
+    "edge/fmi-global/worker.js": {
+      "size": 151555,
+      "git": "7c63820331beaacc471c01505041a2be8bfb13cf",
+      "sha256": "a26e9c088e64df46a257f575f84f1274e9e26f6f669fc0a9c4ee810bf1179338"
+    },
+    "edge/fmi-market-data/router.js": {
+      "size": 15554,
+      "git": "50b379a47c54ed6a2e49a8186b5533a87770ac78",
+      "sha256": "2251c0867137a06f6caf4994c626361c54b67411857866afa75cd5748850cb34"
+    },
+    "edge/fmi-market-data/providers/twelve-data-adapter.js": {
+      "size": 11493,
+      "git": "173e736227a1441bb28a6cb1141d1d0b66611dbe",
+      "sha256": "4fb2104432df98bbb2d59bd8fc0c2f9de0482bec030e2217cfe99fc6eda0fbe1"
+    },
+    "edge/fmi-market-data/RIGHTS_POLICY_CONTRACT.md": {
+      "size": 3148,
+      "git": "2c32a17f87aa6c8bd4bbc4b90187cd50c448ebee",
+      "sha256": "03b3daee9ba8fba5340d6282f8cc1d2e573bca4636c3347df360daae5d0c8440"
+    }
+  },
+  "production_deployment": false
+}
