@@ -1,0 +1,4045 @@
+{
+  "schema": "musitu.fmi.source-migration.v1",
+  "source_repository": "evansmusitu/mft-axiom-build",
+  "destination_repository": "evansmusitu/musitu-frontier-market-intelligence",
+  "inventory_scope": "FMI-named paths and flagship assets across nine pinned branch snapshots; does not include arbitrary shared AXIOM paths or commit history.",
+  "branches": [
+    {
+      "branch": "fmi-flagship-app-20260915",
+      "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+    },
+    {
+      "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+      "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+    },
+    {
+      "branch": "fmi-admin-live-acceptance-20260915",
+      "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+    },
+    {
+      "branch": "fmi-billing-binding-20260912-ephemeral",
+      "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+    },
+    {
+      "branch": "fmi-commercial-launch-20260912-ephemeral",
+      "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+    },
+    {
+      "branch": "fmi-customer-app-v1-20260915",
+      "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+    },
+    {
+      "branch": "fmi-handoff-export-20260913-1914",
+      "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+    },
+    {
+      "branch": "fmi-revenue-certification-20260913",
+      "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+    },
+    {
+      "branch": "fmi-v8-live-promotion-20260913",
+      "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+    }
+  ],
+  "verified_destination_before_manifest": "279f46fd398fd7f4785deef327d09564985c39dc",
+  "counts": {
+    "IMPORTED_EXACT_BLOB": 138,
+    "HELD_OPERATIONAL_EVIDENCE": 12,
+    "BLOCKED_UPSTREAM_CHUNK_INTEGRITY": 10,
+    "HELD_LEGACY_ARCHIVE_UNREVIEWED": 25
+  },
+  "records": [
+    {
+      "path": ".github/workflows/fmi-admin-access-topology-readonly.yml",
+      "sha": "d33c6d3d914c1edae4695129679b0d22061dee5d",
+      "size": 1389,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-access-topology-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-command-center-deploy-v2.yml",
+      "sha": "8390f92adc9411aa55171dab114b3ce95f574a83",
+      "size": 1855,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-command-center-deploy-v2.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-command-center-deploy.yml",
+      "sha": "2d7a581bd182817f6c4c622c1f54b8f3485c72a3",
+      "size": 1939,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-command-center-deploy.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-command-center-finalize.yml",
+      "sha": "21b531816ceb03403e997c96d4e4177f515deaee",
+      "size": 1824,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-command-center-finalize.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-customer-status-schema-readonly.yml",
+      "sha": "ee130a3d8e327e0e0b13eec22a70647fd7291775",
+      "size": 936,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-customer-status-schema-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-edge-403-diagnostic.yml",
+      "sha": "982ab143d1136ad6cd4e126f84456444facba8e9",
+      "size": 1349,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-edge-403-diagnostic.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-failed-deploy-recovery-v2.yml",
+      "sha": "f2e4cf234574e10f6d6b6ad3956d813024e44c74",
+      "size": 1029,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-failed-deploy-recovery-v2.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-failed-deploy-recovery.yml",
+      "sha": "c5d7be30dc8279d6324722e55a3ad520c5687b65",
+      "size": 1284,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-failed-deploy-recovery.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-public-edge-health-fix.yml",
+      "sha": "a4d5d0f7f221b7ea995fdc0b851e0963f0ae103c",
+      "size": 1818,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-public-edge-health-fix.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-public-edge-health-verify-v2.yml",
+      "sha": "c890946b234f515dd4472c4b0de106bde917ef28",
+      "size": 1714,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-public-edge-health-verify-v2.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-public-edge-persistent-fix.yml",
+      "sha": "b3640ce0a7cbd78750b6a92f125742f2e9b99efd",
+      "size": 4507,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-public-edge-persistent-fix.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-route-diagnostic.yml",
+      "sha": "95825ef4a83330aa5f7c53ae51311fef7d78fe33",
+      "size": 2908,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-route-diagnostic.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-under-attack-exception.yml",
+      "sha": "8a9972aca01a7cc5ff7631c7f74df47908cbd579",
+      "size": 1415,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-under-attack-exception.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-app-boot-repair.yml",
+      "sha": "d0f2677f0f8403593a1dd2f41710e8f26f660ed7",
+      "size": 3996,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-app-boot-repair.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-app-browser-boot-e2e.yml",
+      "sha": "1f4b21e8d4de94df39603d2b77b36e8847831341",
+      "size": 1209,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-app-browser-boot-e2e.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-app-client-boot-diagnose.yml",
+      "sha": "94ae203570189e3ec9a0b8ea15a45354d11fd003",
+      "size": 1314,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-app-client-boot-diagnose.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-app-live-diagnose.yml",
+      "sha": "fc73a7543f2cf01d185de246d328d9bc8a7b2ced",
+      "size": 844,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-app-live-diagnose.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-authority-preflight.yml",
+      "sha": "3adc0f68ae6cc465c3b7cc7d37793f74eb6ac424",
+      "size": 6308,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-billing-binding-20260912-ephemeral",
+          "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-authority-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-checkout-handler-readonly.yml",
+      "sha": "0bc5c20e802601e64265a37cdfc8072715ddf5d7",
+      "size": 1376,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-checkout-handler-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-function-preflight.yml",
+      "sha": "771ecdca997440af572fe150c49c1277769bdc9b",
+      "size": 3296,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-billing-binding-20260912-ephemeral",
+          "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-function-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-pattern-preflight.yml",
+      "sha": "4ebc289a31cd20829f714bd46229b9129b39d4c3",
+      "size": 3304,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-billing-binding-20260912-ephemeral",
+          "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-pattern-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-postdeploy-readback.yml",
+      "sha": "a238df67a9f1f7263c815be2c67961bb3d8d8aff",
+      "size": 8655,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-billing-binding-20260912-ephemeral",
+          "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-postdeploy-readback.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-postfailure-readback.yml",
+      "sha": "1e06b055505ac5d572b7ce8fffb46bb60459b786",
+      "size": 3969,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-billing-binding-20260912-ephemeral",
+          "commit": "c5d48a43eeca680fb350df68b826aa78b65f6e2b"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-postfailure-readback.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-reconcile-contract-readonly.yml",
+      "sha": "8f729f1b86b00b5775926e75103cb17bed807628",
+      "size": 1284,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-reconcile-contract-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-topology-readonly.yml",
+      "sha": "3b7ebd6cf196efa41231c6b893c7ca573378c0ae",
+      "size": 1312,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-topology-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-billing-worker-routes-readonly.yml",
+      "sha": "f67759cbf76485fe1f1ffbc9a9164ee7d9e427cc",
+      "size": 1354,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-billing-worker-routes-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-checkout-contract-readonly.yml",
+      "sha": "5d2c5155224ef9e19b2664568c4b4eda282e7ed8",
+      "size": 1320,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-checkout-contract-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-checkout-failclosed-e2e.yml",
+      "sha": "012bbf3780908ef1fb4efcb9cd4236f5bebc277c",
+      "size": 1548,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-checkout-failclosed-e2e.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-customer-app-v1-deploy.yml",
+      "sha": "79480dce102fb99e9df47b042d8a0dbecc7c913f",
+      "size": 2815,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-customer-app-v1-deploy.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-customer-schema-readonly.yml",
+      "sha": "25ead603c82f24af4daa3884202b9a839c47477a",
+      "size": 1328,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-customer-schema-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-edge-billing-route-readonly.yml",
+      "sha": "3999286d7bb1159d53eddf069f82456eca00aaab",
+      "size": 1236,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-edge-billing-route-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-flagship-app-deploy.yml",
+      "sha": "589d1366b7790b6728aecaa0456efa65279e0b32",
+      "size": 6791,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-flagship-app-deploy.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-free-product-access-e2e.yml",
+      "sha": "b506901ddee02e545f5c80be772e6331d29e131e",
+      "size": 1547,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-free-product-access-e2e.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-free-signup-e2e.yml",
+      "sha": "8d9c414c8c591a5c31d59e3c0445698d0a27a0f5",
+      "size": 1481,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-free-signup-e2e.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-live-route-inventory-readonly.yml",
+      "sha": "fd2557204875f4b61990ef2c331f5e8603838ebe",
+      "size": 1294,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-live-route-inventory-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-pending-settlement-reconcile.yml",
+      "sha": "feea312483901b527df7b6ec889b71cbce6e62df",
+      "size": 1574,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-pending-settlement-reconcile.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-public-funnel-preflight.yml",
+      "sha": "f0d74efc524bf6d7d773e4dda1642f8b4bd7c773",
+      "size": 3055,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-public-funnel-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-public-signup-contract-readonly.yml",
+      "sha": "c5ab1a9e67f536c8f1197f3e656b1ffd3d8fee35",
+      "size": 1314,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-public-signup-contract-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-real-money-certification-checkout.yml",
+      "sha": "cb6a3857d8c9630bc8ae8c4856a7d74925a538e4",
+      "size": 1604,
+      "mode": "100755",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-real-money-certification-checkout.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-real-money-certification-reconcile.yml",
+      "sha": "be265082e9a0a50fe99fd5c1abc74e2f643c065c",
+      "size": 1618,
+      "mode": "100755",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-real-money-certification-reconcile.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-revenue-intent-inventory-readonly.yml",
+      "sha": "c26bb6cfefe6ef2d34f04aed26675074ae20d803",
+      "size": 1367,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-revenue-intent-inventory-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-revenue-reconcile-schema-readonly.yml",
+      "sha": "438c62a58ebe71387bfbd9c194834c9158ba1e5d",
+      "size": 1318,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-revenue-reconcile-schema-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-revenue-state-readonly.yml",
+      "sha": "232802134e2634562e69f64b9b5679eebe86a1f7",
+      "size": 1398,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-revenue-state-readonly.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-v8-axiom-content-live-promotion.yml",
+      "sha": "d7856267b0f3419e05ce8ba4e8765144b26203c5",
+      "size": 7112,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-v8-axiom-content-live-promotion.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-v8-state-probe.yml",
+      "sha": "10b86aefd26bbf5252dd47baec80fd18a47de75c",
+      "size": 1721,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-v8-state-probe.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "admin/fmi_admin_worker.mjs",
+      "sha": "0c4e2d187c2b5bdf2693afcee1795b5b1a818875",
+      "size": 39614,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "admin/fmi_admin_worker.mjs",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part00",
+      "sha": "e424b478d29771a8342be279df1ab61746ab0e0e",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part00",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part01",
+      "sha": "8c3c2c81b709d0965277e5096fd8beaf64f719ad",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part01",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part02",
+      "sha": "207cc93593e4605c205ff9d5615eb804c3b77c53",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part02",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part03",
+      "sha": "f3d6b2ca02abfb3e17e8328cbca77adc37a3ab9c",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part03",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part04",
+      "sha": "8436f5b71180c4b85e71bbe5b07dd6d46aad4583",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part04",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/assets.pack.part05",
+      "sha": "fe92797149aa1dad100559dfc11377dcecfdda9b",
+      "size": 4281,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/assets.pack.part05",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/v2_assets.part00",
+      "sha": "961ffa95d8a7fcafbd6286250e3a73bbf7a08120",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/v2_assets.part00",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/v2_assets.part01",
+      "sha": "a88238b866fd144bac6948308a7110c391009c80",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/v2_assets.part01",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/v2_assets.part02",
+      "sha": "2c54c888f44e83ac999bd6ecbd874a28586cd546",
+      "size": 6000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/v2_assets.part02",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/flagship/v2_assets.part03",
+      "sha": "45cd8a75edf6ecae316020d11e28301d0c18784c",
+      "size": 5907,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "app/flagship/v2_assets.part03",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "app/fmi_app_worker.mjs",
+      "sha": "b1c114d1b413d3a3ada589f01d7b0a04c06f66e5",
+      "size": 28759,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "app/fmi_app_worker.mjs",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v8/TRANSPORT_MANIFEST.json",
+      "sha": "f67823aac27c4c60b36ce3cc1f04ed0f291b1498",
+      "size": 967,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v8/TRANSPORT_MANIFEST.json",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v8/chunk_00.b64",
+      "sha": "6fc4f8a20da94885e21c23bf0358a9359c3bcbcd",
+      "size": 16000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v8/chunk_00.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v8/chunk_01.b64",
+      "sha": "24de00711ffa4e5793dab2069af3db71e5faa9ee",
+      "size": 16000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v8/chunk_01.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v8/chunk_02.b64",
+      "sha": "b57d83e25e4e1f9d7324b570df0e5b684043a750",
+      "size": 16000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v8/chunk_02.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v8/chunk_03.b64",
+      "sha": "7a86993521c3d07369837b5c08f2fe92d8771c64",
+      "size": 4364,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v8/chunk_03.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "docs/FMI_REVENUE_RECONCILE_RETRIGGER_20260913.txt",
+      "sha": "459971188b7dcd152b2900b2e8cbdff3ef2dbf46",
+      "size": 261,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "docs/MUSITU_FMI_V8_1_LIVE_PROMOTION_EVIDENCE_20260913.json",
+      "sha": "db50ffbc8f2239eaf96a9f9130b32bacd66fadfa",
+      "size": 3937,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_ADMIN_COMMAND_CENTER_READY_20260914.json",
+      "sha": "ad3cf516165e4aedc7a75004156ce8f2b208c2ef",
+      "size": 3336,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_ADMIN_PUBLIC_EDGE_HEALTH_FIX_20260914.json",
+      "sha": "a12fbd892569efd431da932f0ff6113000c30620",
+      "size": 2690,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_ADMIN_PUBLIC_EDGE_PERSISTENT_FIX_20260914.json",
+      "sha": "4edfbf5a7359d5071348bbe655a2b58a876c7f79",
+      "size": 1950,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_CUSTOMER_APP_V1_READY_20260915.json",
+      "sha": "1f27ce2b7e003cd26efb32ea48702fcbbaced1b0",
+      "size": 3114,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_CUSTOMER_LAUNCH_READINESS_20260914.json",
+      "sha": "875a2544778ba9278e76ea53bd169ac7dd8532a8",
+      "size": 6442,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_FLAGSHIP_APP_READY_20260915.json",
+      "sha": "b1d8c6f5a01ac4f82fa92c6ca57400ca886d8fab",
+      "size": 3530,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_FLAGSHIP_V2_READY_20260916.json",
+      "sha": "d81d89d0c482acb38286f54c74a696d910a03566",
+      "size": 4031,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "scripts/build_fmi_flagship_worker.py",
+      "sha": "5b0bed4cc478dc4b5069ca2043e10dfab35aa724",
+      "size": 5375,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "scripts/build_fmi_flagship_worker.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/deploy_fmi_admin.py",
+      "sha": "76312984ec1192cd5e0f476676e048dba4f43d90",
+      "size": 16515,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/deploy_fmi_admin.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/deploy_fmi_admin_v2.py",
+      "sha": "b513754a45f6630c653d1f6093ee5ed2350c2e8b",
+      "size": 2530,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/deploy_fmi_admin_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/deploy_fmi_app.py",
+      "sha": "1990237d8d0700c561a9b79f1de14f8da6fe1864",
+      "size": 10961,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        }
+      ],
+      "destination": "scripts/deploy_fmi_app.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/deploy_fmi_flagship.py",
+      "sha": "18040bd3cbdca9713bd607f7b79738a05ec3775a",
+      "size": 12248,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "scripts/deploy_fmi_flagship.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/deploy_fmi_flagship_v2.py",
+      "sha": "2e5f370f08ecdd1a995efc3399e3d8a584b9f1ca",
+      "size": 8295,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "scripts/deploy_fmi_flagship_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_access_topology_readonly.py",
+      "sha": "554080b92f90ee63afd6e32274c57811fa1b4ba0",
+      "size": 3374,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_access_topology_readonly.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_customer_status_schema.py",
+      "sha": "3e1b1f8280596f899495288be72eb3f6bd249cbd",
+      "size": 1897,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_customer_status_schema.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_edge_403_diagnostic.py",
+      "sha": "30e370976ca7322c7386c1513aed234d8e324d89",
+      "size": 7033,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_edge_403_diagnostic.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_failed_deploy_recovery.py",
+      "sha": "175a71a6dcfab50a66e2adcb33ba975d296732fb",
+      "size": 4081,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_failed_deploy_recovery.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_failed_deploy_recovery_v2.py",
+      "sha": "e817fe5d4b654d0a8ecaa2f062539b5649b77ac4",
+      "size": 3430,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_failed_deploy_recovery_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_finalize.py",
+      "sha": "e7a6ae684880e601827b79aa9598ee3482d012e4",
+      "size": 19933,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_finalize.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_public_edge_health_fix.py",
+      "sha": "2a13fea489f92a52e873c8737ae91d0ea65e9116",
+      "size": 10964,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_public_edge_health_fix.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_public_edge_health_verify_v2.py",
+      "sha": "1c717e1baec0fd5e9b2d05001576e7b781eda061",
+      "size": 5427,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_public_edge_health_verify_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_public_edge_persistent_fix.py",
+      "sha": "7507ffe03cf917a6351f180a92bef62999e9c63b",
+      "size": 10372,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_public_edge_persistent_fix.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_admin_under_attack_exception.py",
+      "sha": "d44ff1ecb7ed0893c5b4116f784db47f65c43922",
+      "size": 5490,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_admin_under_attack_exception.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_billing_checkout_handler_readonly.py",
+      "sha": "42e76edb1a815d6c3b1631fedd27e265b4be9525",
+      "size": 6330,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_billing_checkout_handler_readonly.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_billing_reconcile_contract_probe.py",
+      "sha": "4ce788b27a76c7639862988136b9f149b4071dbe",
+      "size": 2572,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_billing_reconcile_contract_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_billing_topology_readonly.py",
+      "sha": "81b17997efe63940af0b09ed3a00ec80efd6aff4",
+      "size": 6693,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_billing_topology_readonly.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_billing_worker_routes_readonly.py",
+      "sha": "b6f490488b8edb2f11096b550628dbd62ba815ef",
+      "size": 4378,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_billing_worker_routes_readonly.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_checkout_contract_readonly.py",
+      "sha": "8293f5c515a553cb71c2ca767869d6851bd56454",
+      "size": 7902,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_checkout_contract_readonly.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_checkout_failclosed_e2e.py",
+      "sha": "ac463aa8255b2365906aa147da7543b0fb1f0035",
+      "size": 7220,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_checkout_failclosed_e2e.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_customer_schema_probe.py",
+      "sha": "74aed2b0e7905717a665deb64cf10153b514023b",
+      "size": 2978,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_customer_schema_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_edge_billing_route_probe.py",
+      "sha": "4b7a290ecb138bd2cacce7761f8b66bbecd1187e",
+      "size": 2417,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_edge_billing_route_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_free_product_access_e2e.py",
+      "sha": "75b22d99b86b130f95b827a87b70dc6dd91d251a",
+      "size": 6075,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_free_product_access_e2e.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_free_signup_e2e.py",
+      "sha": "409ae17cb7fb7054f00232fc17e8b6b01b85ecc8",
+      "size": 10479,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_free_signup_e2e.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_pending_settlement_reconcile.py",
+      "sha": "11b5b45bf793d08eae9335cacdb297872bbee822",
+      "size": 6309,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_pending_settlement_reconcile.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_public_route_inventory.py",
+      "sha": "282dc91590a892b4555983b036591ca4e7a989fa",
+      "size": 2573,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_public_route_inventory.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_public_signup_contract_probe.py",
+      "sha": "a2e5920e51affa7b9520d7be03debe4ce8dd48c8",
+      "size": 4083,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_public_signup_contract_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_checkout_initiate.py",
+      "sha": "dc61c713b73271ea3a14643c09630c615de73c0b",
+      "size": 228,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_checkout_initiate.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_checkout_initiate_v2.py",
+      "sha": "c66c8d50449c451e690672a22c26904b8a1ff676",
+      "size": 10004,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_checkout_initiate_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_intent_inventory.py",
+      "sha": "422cd74b91937d1188e29e68094a178945e88486",
+      "size": 4522,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_intent_inventory.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_reconcile.py",
+      "sha": "83fe1c9d22c199b5c137fc95d14f349acd0b7d0d",
+      "size": 235,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_reconcile.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_reconcile_schema_probe.py",
+      "sha": "8943717b309737313fc14dd233fbc275da02f0bf",
+      "size": 2402,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_reconcile_schema_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_reconcile_v2.py",
+      "sha": "39adc50cfa69f750a115159710627526a2d0678a",
+      "size": 12750,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_reconcile_v2.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_reconcile_v3.py",
+      "sha": "0070ec015989ef914e0b6deae96045df00a5d1a9",
+      "size": 16450,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_reconcile_v3.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_state_probe.py",
+      "sha": "52cadb7f56dd7590f9439e09eb7b4b3b33cf0026",
+      "size": 6726,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": "scripts/fmi_revenue_state_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v8_1_asset_integrity_patch.py",
+      "sha": "fb98cbbb9433f4094c032003c44f4644847688c0",
+      "size": 1856,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "scripts/fmi_v8_1_asset_integrity_patch.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v8_axiom_content_swap.py",
+      "sha": "7fe25a4c7a1c0ebd14a9f5d4bf946114a4a8d04c",
+      "size": 9453,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "scripts/fmi_v8_axiom_content_swap.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v8_postverify.py",
+      "sha": "5d59a54f16869f3356eec7c1540b3fe12d985fbc",
+      "size": 10493,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "scripts/fmi_v8_postverify.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v8_predeploy.py",
+      "sha": "d3309fbafd0ffbd98eb82f38c8e30b2436e00002",
+      "size": 4563,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "scripts/fmi_v8_predeploy.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v8_state_probe.py",
+      "sha": "8c34d734591bb01fb3f82684d97dd5f56a958c00",
+      "size": 4417,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        },
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        },
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        },
+        {
+          "branch": "fmi-customer-app-v1-20260915",
+          "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
+        },
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        },
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        },
+        {
+          "branch": "fmi-v8-live-promotion-20260913",
+          "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
+        }
+      ],
+      "destination": "scripts/fmi_v8_state_probe.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/verify_fmi_flagship_v2_assets.py",
+      "sha": "f0a8babdee657839fdb03ea91221d6b8b50cfe13",
+      "size": 1404,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-flagship-app-20260915",
+          "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
+        }
+      ],
+      "destination": "scripts/verify_fmi_flagship_v2_assets.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-v9-1-provider-preflight.yml",
+      "sha": "89c0eff5ffee1c1230e798b0d74b3d9eec85f626",
+      "size": 7227,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-v9-1-provider-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-v9-1-provider-promotion.yml",
+      "sha": "5fd7658e1726bdcbe420dff32f4e5db26add69fa",
+      "size": 6397,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-v9-1-provider-promotion.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-v9-4-provider-preflight.yml",
+      "sha": "4e7ad35ec645abd8241e230768ea34e77280ed60",
+      "size": 7092,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-v9-4-provider-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/TRANSPORT_MANIFEST.json",
+      "sha": "f0bb05984a25cc7240dd141886fc439e42a528ec",
+      "size": 1370,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/TRANSPORT_MANIFEST.json",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_00.b64",
+      "sha": "5e4a84ed7680087aec64d853f27b591b63b4f256",
+      "size": 16000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_00.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_01.b64",
+      "sha": "ac66b1e7aecdf5195a74c6eff1c103e1cf79aa87",
+      "size": 16000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_01.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_02_00.b64",
+      "sha": "415c95d2c43627e6bc58b855c7cd88c17ddffe06",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_02_00.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_02_01.b64",
+      "sha": "866b49796f50eb56288e2eba73deca42d45cca09",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_02_01.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_02_02.b64",
+      "sha": "551b3f159b2c4f7998d666468e8676db261db904",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_02_02.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_02_03.b64",
+      "sha": "db9f12afef496f9548f00568a6dc966728601df9",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_02_03.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_03_00.b64",
+      "sha": "6403e017b48e7f3449028fa20fd51f98de1c9348",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_03_00.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_03_01.b64",
+      "sha": "a90d43098abd35c0d45e50b5d8f6ff45c9c95739",
+      "size": 4000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_03_01.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_1_control/chunk_03_02.b64",
+      "sha": "4fe7c752c87e16c0f67e9abf312e96030f22137d",
+      "size": 960,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "deploy_payload/fmi_v9_1_control/chunk_03_02.b64",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/TRANSPORT_MANIFEST.json",
+      "sha": "187a90b62729ed047080c80600e65ef0f1044905",
+      "size": 2037,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_00.b64",
+      "sha": "97a5c68625ebed0cae7de55fa347b4efcddde56f",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_01.b64",
+      "sha": "ef1d99bd65718ea95fae10e932c107c02f1be758",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_02.b64",
+      "sha": "1f2cdb337a896cd069e4d410daca8c7447e332d7",
+      "size": 10152,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_03.b64",
+      "sha": "15309ec7e90cd4ad864d1657601b02ec93e22fec",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_04.b64",
+      "sha": "9a0dc371a5f0643176f9654455f6800ff48db3b6",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_05.b64",
+      "sha": "bc98cbc7af79203bc240247bcbe30eefadfee490",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_06.b64",
+      "sha": "71eef09e03d6f1af9746e7b6a82aa064f1df7235",
+      "size": 8000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_07a.b64",
+      "sha": "5f8d066bd9ccedaaa9097158fae629f790cf78a3",
+      "size": 3200,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "deploy_payload/fmi_v9_4_control/chunk_07b.b64",
+      "sha": "6b37dd2ded82bbc3a05582e3bfd91df1dcfdb599",
+      "size": 3196,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": null,
+      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+    },
+    {
+      "path": "scripts/fmi_v9_1_control_model.py",
+      "sha": "314958ee69cacf5af942c62515e92b0de306a937",
+      "size": 2071,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_1_control_model.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_1_provider_preflight.py",
+      "sha": "fe2423c28680a6273606c096bab94689ec4ccb63",
+      "size": 6634,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_1_provider_preflight.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_1_provider_promote.py",
+      "sha": "19dfe66d1b3db325584f3d416edb1602842a9804",
+      "size": 12951,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_1_provider_promote.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_4_provider_preflight.py",
+      "sha": "c7bf4c13242c4fe0b9c0492726380442d48d816f",
+      "size": 8709,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_4_provider_preflight.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_4_provider_promote.py",
+      "sha": "86be4f16913b75f354f2220b1563564a9701f68a",
+      "size": 15082,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_4_provider_promote.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_5_atomic_promote.py",
+      "sha": "9a66598e235af83b2e312e65588c583c9742b7ee",
+      "size": 13515,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_5_atomic_promote.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_v9_6_rights_intake.py",
+      "sha": "5277d86ff59ce5e5650e311a783a65458edd0cbc",
+      "size": 14140,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "scripts/fmi_v9_6_rights_intake.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "tests/test_fmi_v9_1_control_model.py",
+      "sha": "aaaca6c8bfa53f47bc67dc483e170b1245db4540",
+      "size": 1305,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "tests/test_fmi_v9_1_control_model.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "tests/test_fmi_v9_1_provider_promote.py",
+      "sha": "6c58973cef81b9d9d4ad91ceaeaee3a364039130",
+      "size": 5322,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "tests/test_fmi_v9_1_provider_promote.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "tests/test_fmi_v9_4_provider_control.py",
+      "sha": "fad0f7f66e3e851eaddb401eb23062127432d3ad",
+      "size": 13377,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "tests/test_fmi_v9_4_provider_control.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "tests/test_fmi_v9_5_atomic_promote.py",
+      "sha": "da2534d8ef2edc2e1bbd85ce0e9bde83c924611b",
+      "size": 9104,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "tests/test_fmi_v9_5_atomic_promote.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "tests/test_fmi_v9_6_rights_intake.py",
+      "sha": "d00fd575545ba65e4aa553c009ed274a09f7b89c",
+      "size": 11812,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-v9-1-market-data-provider-candidate-20260913",
+          "commit": "eab2bc6be3b62fd1d63be3ea8ba9e56446d61fe9"
+        }
+      ],
+      "destination": "tests/test_fmi_v9_6_rights_intake.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-admin-live-acceptance-20260915.yml",
+      "sha": "99d51b3f1df0ef5c8ec57955ae04e45b3ed1f262",
+      "size": 4148,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-admin-live-acceptance-20260915",
+          "commit": "add92efbe4e6b92e2e4bc6f57b440ac1828c7b5f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-admin-live-acceptance-20260915.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-557-base-fetch-preflight.yml",
+      "sha": "9b81f4b51f921d991f3d57775d23b1e94b3b3240",
+      "size": 1136,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-557-base-fetch-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-commercial-control-plane-preflight.yml",
+      "sha": "bcb2cfe7a24e12de5b43b70f3e2c52b6e9b15aa0",
+      "size": 3893,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-commercial-control-plane-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-drive-transport-preflight.yml",
+      "sha": "1997e6681307e1b72156366bd9161c9c58b7fec9",
+      "size": 1587,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-drive-transport-preflight.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-inner-transport-preflight-v2.yml",
+      "sha": "100a8f41b7376f13e39929f713e7dfc2394aa264",
+      "size": 3130,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-inner-transport-preflight-v2.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "evidence/MUSITU_FMI_COMMERCIAL_DEPLOYMENT_PREFLIGHT_20260912.json",
+      "sha": "03921ac1df5405339f9bd2504e44aa076da9c203",
+      "size": 3157,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "fmi_launch_transport/000.b64",
+      "sha": "c5b811ed0f17ae6b997a8369e239270044ad2c23",
+      "size": 12000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/001.b64",
+      "sha": "69af6e5824c90a1cf70574b576a7b40c4cfbb8b7",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/002.b64",
+      "sha": "fef20bea98a5c7a29e5cdeb8205ea7697ea322ff",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/003.b64",
+      "sha": "4592d3ecbe1bd953fd2749d46d2fdda1ddd574ba",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/004.b64",
+      "sha": "061d78f83e2143ea2be3b5ed042887f94e1a04cb",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/005.b64",
+      "sha": "f00c55847ddc8a53240deefbd9cfd110e1cce670",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/006.b64",
+      "sha": "d89b7806abd92878bd0f0cb30a032efc1e276056",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/007.b64",
+      "sha": "ff75b30c05d6d6dc4eb4caaa85ccdde3be7ff832",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/008.b64",
+      "sha": "6cb2de528f19cba63b99e9713bf0d236e4061650",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/009.b64",
+      "sha": "cbee92e4bba85024ce9b9fb669ef65b66d44fd03",
+      "size": 5027,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/010.b64",
+      "sha": "631cd3b62b1703d08ee359ded57be5d778e40991",
+      "size": 9176,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport/012.b64",
+      "sha": "3b68e155c8471668ca4e79a7957c7538b488d2c7",
+      "size": 21591,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/000.b64",
+      "sha": "c5b811ed0f17ae6b997a8369e239270044ad2c23",
+      "size": 12000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/009.b64",
+      "sha": "6dc245f956a8ef9f5ef5bede4488b5e0a26442ff",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/010.b64",
+      "sha": "d588a80d7301cbb00e810f2fc54c2c6042a3ba28",
+      "size": 8585,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/011.b64",
+      "sha": "cf12dfad2e75f0eeefe47b764e036eb98e611e94",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/012.b64",
+      "sha": "4b3e32390f9eec9eafb8973e76c887b32879027c",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/013.b64",
+      "sha": "51498bd846f2f3e4d02e4529278490a8f3cbcc46",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/014.b64",
+      "sha": "cf8be94d5ed41c232a1854c07c4da4add4a4b46d",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/015.b64",
+      "sha": "640c0b2bbb1a82e341352d4eff4d87b91bc4c020",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/016.b64",
+      "sha": "03628c4a71947d27a6afb82a518df7d84e84f193",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/017.b64",
+      "sha": "b113e05d9eb51c25ff73f1efef5d5e7733e5fcea",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/018.b64",
+      "sha": "f53f05849a9add10bf23de94677a1e9058288092",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/019.b64",
+      "sha": "d02f20f701a35eb8268f4b6d728c388cd34bb456",
+      "size": 14000,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": "fmi_launch_transport_v2/020.b64",
+      "sha": "7850e127d6fddf67c401d3833b75af1286dcaaea",
+      "size": 34740,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-commercial-launch-20260912-ephemeral",
+          "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+    },
+    {
+      "path": ".github/workflows/fmi-handoff-export-1914.yml",
+      "sha": "b2b71e4a9a83875602d0bac68d558544d5ae0bd2",
+      "size": 2489,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        }
+      ],
+      "destination": "migration/legacy-workflows/fmi-handoff-export-1914.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": ".github/workflows/fmi-real-money-certification-reconcile.yml",
+      "sha": "6a183d0fbcca3556d4c4ec6b98d1c22618415b4f",
+      "size": 1529,
+      "mode": "100755",
+      "origins": [
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        }
+      ],
+      "destination": "migration/legacy-variants/fmi-handoff-export-20260913-1914/workflows/fmi-real-money-certification-reconcile.yml",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "scripts/fmi_revenue_reconcile.py",
+      "sha": "84935519f412501491803176332e47ed43b349cd",
+      "size": 221,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-handoff-export-20260913-1914",
+          "commit": "748832cf99086a7e4f49d2fe01f8cad19769867f"
+        }
+      ],
+      "destination": "migration/legacy-variants/fmi-handoff-export-20260913-1914/scripts/fmi_revenue_reconcile.py",
+      "status": "IMPORTED_EXACT_BLOB"
+    },
+    {
+      "path": "evidence/FMI_CUSTOMER_LAUNCH_READINESS_20260916.json",
+      "sha": "26f6ed10def953c8211c767ee0a136ce587db870",
+      "size": 4667,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    },
+    {
+      "path": "evidence/FMI_EXISTING_INTENT_SETTLEMENT_RECONCILE_20260916.json",
+      "sha": "50aad43fa692f52186751f92c3f307c6ed26ed98",
+      "size": 2530,
+      "mode": "100644",
+      "origins": [
+        {
+          "branch": "fmi-revenue-certification-20260913",
+          "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
+        }
+      ],
+      "destination": null,
+      "status": "HELD_OPERATIONAL_EVIDENCE"
+    }
+  ],
+  "v9_4_integrity_failure": {
+    "path": "deploy_payload/fmi_v9_4_control/chunk_02.b64",
+    "expected_bytes": 8000,
+    "actual_bytes": 10152,
+    "expected_sha256": "74067c475229c9ac8656a8d7da20ecd01625e1530964acb73b5dd72764debcc1",
+    "actual_sha256": "2207d7816543f1840759d746e9cefa0a31404e0730da2aaa315f9d10a9812ac6",
+    "status": "NOT_IMPORTED; original, prefix and suffix checks failed"
+  },
+  "production_cutover": false,
+  "source_deleted": false
+}

@@ -1,8 +1,10 @@
-# FMI migration status
+# FMI migration ledger
 
-Initial public source import from `evansmusitu/mft-axiom-build`, branch `fmi-flagship-app-20260915`, pinned commit `6f8586c6c2a05aed7386fbbf5686928f73be99f4`.
+See `migration/source-inventory.json` for the nine source branch heads and the disposition of each of the 185 inventoried path/blob versions.
 
-- `app/fmi_app_worker.mjs`: upstream blob `b1c114d1b413d3a3ada589f01d7b0a04c06f66e5`
-- `admin/fmi_admin_worker.mjs`: upstream blob `0c4e2d187c2b5bdf2693afcee1795b5b1a818875`
+- Exact imports: 138
+- Upstream V9.4 transport integrity blockers: 10
+- Historical launch archive paths held: 25
+- Operational evidence paths held: 12
 
-The original repository and deployments are unchanged. This initial import excludes encoded asset and deployment packs, production workflows, operational evidence, unrelated AXIOM source and other branches pending review. It does not establish production readiness or grant a software license. The imported workers are source components, not a complete standalone deployment.
+The manifest records the destination commit checked before this documentation update. No historical commit graph, source deletion, live traffic cutover or deployment is asserted. The inactive workflows must be adapted to FMI-only credential bindings before activation.
