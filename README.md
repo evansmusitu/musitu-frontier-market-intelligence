@@ -1,29 +1,34 @@
 # MUSITU Frontier Market Intelligence (FMI)
 
-Dedicated public development repository for FMI. Migrated from nine pinned FMI branches in `evansmusitu/mft-axiom-build`.
+Dedicated public FMI development repository. Nine historical FMI branches in `evansmusitu/mft-axiom-build` have been inventoried.
 
 ## Source layout
 
 - `app/` — customer worker and flagship V1/V2 assets.
 - `admin/` — administration worker.
-- `scripts/` — FMI build, provider controls, billing and deployment tooling.
-- `tests/` — migrated V9 provider and rights tests.
-- `deploy_payload/` — inspected V8 and V9.1 transport bundles.
-- `migration/legacy-workflows/` — archived, inactive workflow definitions.
-- `migration/legacy-variants/` — distinct historical reconciliation versions.
-- `migration/source-inventory.json` — original Git blob and branch provenance for every inventoried path/version, including held material.
+- `edge/` — recovered exact V9.4 edge runtime, market-data router, adapter and rights contract.
+- `scripts/` — build, provider controls, billing and deployment tooling.
+- `tests/` — migrated provider and rights tests.
+- `deploy_payload/` — V8, V9.1 transport bundles and V9.4 recovery record.
+- `migration/legacy-workflows/` — inactive historical workflow definitions.
+- `migration/legacy-variants/` — historical reconciliation variants.
+- `migration/legacy-launch-fragments/` — verified historical fragments; not a complete ZIP.
+- `migration/source-inventory.json` — source provenance and disposition of all 185 inventoried path/blob versions.
 
-## Build and validation (offline, no deployment)
+## Validation (no deployment)
 
 ```sh
 python scripts/verify_fmi_flagship_v2_assets.py
 FLAGSHIP_WORKER_OUT=/tmp/fmi-flagship-worker.mjs python scripts/build_fmi_flagship_worker.py
 node --check /tmp/fmi-flagship-worker.mjs
 PYTHONPATH=scripts python -m pytest -q tests
+python scripts/rebuild_fmi_v9_4_transport.py --out /tmp/fmi-v94-recovered
 ```
 
-These commands are proposed validation steps, not a claim that the suite has passed. Some legacy tests or scripts may require a separate runtime payload or additional setup. Do not run legacy deployment scripts or activate archived workflows against live services until independent qualification.
+The V9.4 rebuild was tested twice locally using the exact recovered source bytes. The other validation commands have not yet been executed against this consolidated repository. Historical workflows remain inactive; do not execute operational scripts against production without independent qualification.
 
-## Migration boundary
+## Historical recovery boundary
 
-138 of 185 inventoried path/blob versions were transferred exactly. The original repo remains intact. The V9.4 transport is blocked by upstream chunk size and digest mismatch. Historical launch archives and operational evidence remain referenced at pinned source commits pending review. No credentials, production cutover, license grant or live readiness certification is implied.
+167 of 185 inventoried versions are exact imports, one evidence record is redacted, ten defective V9.4 transport paths are superseded by four hash-verified runtime files and a reproducible new transport, and seven damaged launch fragments are superseded by the private authoritative ZIP (333,338 bytes; all 168 controlled files verified). The original compressed V9.4 transport has not been reproduced. The private full launch archive remains in the owner's Drive and was not republished wholesale.
+
+No production cutover, live trading, historical commit-graph migration, license grant or production readiness certification is implied. See MIGRATION.md for details.

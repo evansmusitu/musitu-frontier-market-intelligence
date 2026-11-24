@@ -28,5 +28,15 @@
       "sha256": "03b3daee9ba8fba5340d6282f8cc1d2e573bca4636c3347df360daae5d0c8440"
     }
   },
-  "production_deployment": false
+  "production_deployment": false,
+  "rebuild": {
+    "script": "scripts/rebuild_fmi_v9_4_transport.py",
+    "command": "python scripts/rebuild_fmi_v9_4_transport.py --out /tmp/fmi-v94-recovered",
+    "local_verified_runs": 2,
+    "identical_output": true,
+    "payload_files": 4,
+    "chunks": 8,
+    "tar_gz_sha256": "eacb83b3acf1e78280f78564cfd97e8fe9e7ae809de1082651cb67be9cf840ae",
+    "original_transport_reproduced": false
+  }
 }
