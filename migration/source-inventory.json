@@ -41,10 +41,10 @@
       "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
     }
   ],
-  "verified_destination_before_manifest": "279f46fd398fd7f4785deef327d09564985c39dc",
+  "verified_destination_before_manifest": "3aa4aadd6a394919ee8984126a89eb97fdd52aaa",
   "counts": {
-    "IMPORTED_EXACT_BLOB": 138,
-    "HELD_OPERATIONAL_EVIDENCE": 12,
+    "IMPORTED_EXACT_BLOB": 149,
+    "PUBLIC_REDACTED_EVIDENCE": 1,
     "BLOCKED_UPSTREAM_CHUNK_INTEGRITY": 10,
     "HELD_LEGACY_ARCHIVE_UNREVIEWED": 25
   },
@@ -1696,8 +1696,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "docs/FMI_REVENUE_RECONCILE_RETRIGGER_20260913.txt",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "docs/MUSITU_FMI_V8_1_LIVE_PROMOTION_EVIDENCE_20260913.json",
@@ -1734,8 +1734,9 @@
           "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "migration/public-evidence/MUSITU_FMI_V8_1_LIVE_PROMOTION_EVIDENCE_20260913.redacted.json",
+      "status": "PUBLIC_REDACTED_EVIDENCE",
+      "redaction": "Internal database resource UUID replaced; original remains at pinned upstream commit."
     },
     {
       "path": "evidence/FMI_ADMIN_COMMAND_CENTER_READY_20260914.json",
@@ -1760,8 +1761,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_ADMIN_COMMAND_CENTER_READY_20260914.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_ADMIN_PUBLIC_EDGE_HEALTH_FIX_20260914.json",
@@ -1786,8 +1787,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_ADMIN_PUBLIC_EDGE_HEALTH_FIX_20260914.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_ADMIN_PUBLIC_EDGE_PERSISTENT_FIX_20260914.json",
@@ -1812,8 +1813,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_ADMIN_PUBLIC_EDGE_PERSISTENT_FIX_20260914.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_CUSTOMER_APP_V1_READY_20260915.json",
@@ -1830,8 +1831,8 @@
           "commit": "fb5d4d6d1244dfbe483c940437939d47a2b01aaa"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_CUSTOMER_APP_V1_READY_20260915.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_CUSTOMER_LAUNCH_READINESS_20260914.json",
@@ -1856,8 +1857,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_CUSTOMER_LAUNCH_READINESS_20260914.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_FLAGSHIP_APP_READY_20260915.json",
@@ -1870,8 +1871,8 @@
           "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_FLAGSHIP_APP_READY_20260915.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_FLAGSHIP_V2_READY_20260916.json",
@@ -1884,8 +1885,8 @@
           "commit": "6f8586c6c2a05aed7386fbbf5686928f73be99f4"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_FLAGSHIP_V2_READY_20260916.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "scripts/build_fmi_flagship_worker.py",
@@ -3608,8 +3609,8 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/MUSITU_FMI_COMMERCIAL_DEPLOYMENT_PREFLIGHT_20260912.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "fmi_launch_transport/000.b64",
@@ -4014,8 +4015,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_CUSTOMER_LAUNCH_READINESS_20260916.json",
+      "status": "IMPORTED_EXACT_BLOB"
     },
     {
       "path": "evidence/FMI_EXISTING_INTENT_SETTLEMENT_RECONCILE_20260916.json",
@@ -4028,8 +4029,8 @@
           "commit": "f53ba126600be1f58cd5f2b7cd2bc612bf846bf2"
         }
       ],
-      "destination": null,
-      "status": "HELD_OPERATIONAL_EVIDENCE"
+      "destination": "evidence/FMI_EXISTING_INTENT_SETTLEMENT_RECONCILE_20260916.json",
+      "status": "IMPORTED_EXACT_BLOB"
     }
   ],
   "v9_4_integrity_failure": {

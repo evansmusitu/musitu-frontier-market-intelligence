@@ -1,0 +1,173 @@
+{
+  "schema": "musitu.fmi.customer-launch-readiness.v4",
+  "recorded_at": "2026-09-14T03:03:30Z",
+  "product": "MUSITU Frontier Market Intelligence",
+  "public_base": "https://mft-fmi-global-edge.mft-education-nexus-93f395f5.workers.dev",
+  "isolated_branch": "fmi-revenue-certification-20260913",
+  "customer_access_launch_ready": true,
+  "public_funnel": {
+    "gate": "FMI_PUBLIC_FUNNEL_READY",
+    "workflow_run_id": 34768538204,
+    "health_http": 200,
+    "landing_http": 200,
+    "catalog_http": 200,
+    "signup_path_visible": true,
+    "authority": "PAPER_SHADOW_ONLY",
+    "plans": {
+      "FOUNDING": {"amount_cents": 4900, "currency": "USD"},
+      "PRO": {"amount_cents": 14900, "currency": "USD"}
+    }
+  },
+  "free_customer_access": {
+    "gate": "FMI_FREE_CUSTOMER_ACCESS_E2E_PASS",
+    "workflow_run_id": 34800141686,
+    "signup_http": 201,
+    "signup_transport": "json",
+    "customer_plan": "FREE",
+    "customer_status": "active",
+    "active_api_key_count": 1,
+    "raw_api_key_returned": true,
+    "raw_api_key_matches_active_d1": true,
+    "me_http": 200,
+    "credential_accepted": true,
+    "paid_authority_created": false,
+    "synthetic_customer_deleted": true,
+    "residual_customer_rows": 0,
+    "evidence_sha256": "0e2e4dc1c4fba8739bdf131fe08eab8408ea562fb741123dbe46b9e3baf79780"
+  },
+  "free_product_surfaces": {
+    "gate": "FMI_FREE_PRODUCT_SURFACES_E2E_PASS",
+    "workflow_run_id": 34800264684,
+    "signup_http": 201,
+    "credential_hash_matches_d1": true,
+    "surfaces": {
+      "/v1/me": {"http": 200, "json": true},
+      "/v1/history": {"http": 200, "json": true},
+      "/v1/watchlists": {"http": 200, "json": true}
+    },
+    "paid_authority_created": false,
+    "synthetic_customer_deleted": true,
+    "residual_customer_rows": 0,
+    "evidence_sha256": "f605e25c1884917bf0e1ec63f17c0ee58ccf82cd025d81aa7d13ff8c0ec6700c"
+  },
+  "customer_schema_cleanup_boundary": {
+    "gate": "FMI_CUSTOMER_SCHEMA_READONLY_PASS",
+    "workflow_run_id": 34799985416,
+    "customer_owned_tables_use_delete_cascade": true,
+    "row_data_read": false,
+    "evidence_sha256": "1be31b990ab8ea932376504dbb09acdcc0a858a9f592f0296b86aea1315236d3"
+  },
+  "live_route_inventory": {
+    "gate": "FMI_LIVE_ROUTE_INVENTORY_READONLY_PASS",
+    "workflow_run_id": 34800097473,
+    "route_count": 20,
+    "edge_source_sha256": "27ea84793c78f24091e0154836d6330678f3386db97b43f864f117c28ebebcd9",
+    "customer_routes_observed": [
+      "/v1/signup",
+      "/v1/me",
+      "/v1/market/context",
+      "/v1/market/search",
+      "/v1/intelligence/analyze",
+      "/v1/history",
+      "/v1/watchlists",
+      "/v1/watchlists/items",
+      "/v1/evidence/delta",
+      "/v1/evidence/monitors",
+      "/v1/evidence/monitor-events",
+      "/v1/share",
+      "/v1/billing/catalog",
+      "/v1/billing/checkout",
+      "/v1/billing/poll"
+    ]
+  },
+  "paid_checkout_readonly": {
+    "checkout_contract_gate": "FMI_CHECKOUT_CONTRACT_READONLY_PASS",
+    "checkout_contract_run_id": 34800922449,
+    "edge_source_sha256": "27ea84793c78f24091e0154836d6330678f3386db97b43f864f117c28ebebcd9",
+    "edge_route": "/v1/billing/checkout",
+    "edge_auth_signal_observed": true,
+    "edge_plan_literals_observed": ["FREE", "FOUNDING", "PRO"],
+    "billing_topology_gate": "FMI_BILLING_TOPOLOGY_READONLY_PASS",
+    "billing_topology_run_id": 34800975056,
+    "service_binding": {
+      "binding_name": "FMI_BILLING",
+      "service": "mft-fmi-billing",
+      "environment": "production"
+    },
+    "billing_worker_routes_gate": "FMI_BILLING_WORKER_ROUTES_READONLY_PASS",
+    "billing_worker_routes_run_id": 34801014866,
+    "billing_worker_source_sha256": "cd55b2b7b34bc5f73c394eddebd9edbc22690250b4ab7aff36a209064a3b9454",
+    "billing_checkout_handler_gate": "FMI_BILLING_CHECKOUT_HANDLER_READONLY_PASS",
+    "billing_checkout_handler_run_id": 34801187578,
+    "checkout_handler_validation_states_observed": [
+      "already_on_plan",
+      "invalid_paynow_hash",
+      "payment_provider_error",
+      "poll_provider_error",
+      "unknown_plan"
+    ],
+    "public_internal_routes": [
+      "/billing/catalog",
+      "/billing/checkout",
+      "/billing/healthz",
+      "/billing/poll",
+      "/billing/return",
+      "/billing/webhooks/paynow"
+    ],
+    "protected_internal_paynow_routes": [
+      "/internal/paynow/initiate",
+      "/internal/paynow/poll",
+      "/internal/paynow/sign-initiate-fmi",
+      "/internal/paynow/verify-callback-fmi"
+    ],
+    "founding_and_pro_literals_observed_in_settlement_control": true,
+    "payment_intent_created_by_readonly_continuation": false,
+    "provider_request_performed_by_readonly_probes": false
+  },
+  "checkout_failclosed_e2e": {
+    "gate": "FMI_CHECKOUT_FAILCLOSED_E2E_PASS",
+    "workflow_run_id": 34801239350,
+    "signup_http": 201,
+    "same_plan_checkout_http": 400,
+    "same_plan_checkout_error": "self_serve_plan_not_supported",
+    "checkout_intent_delta": 0,
+    "active_subscription_delta": 0,
+    "plan_activated_event_delta": 0,
+    "provider_payment_intent_observed": false,
+    "paid_authority_created": false,
+    "synthetic_customer_deleted": true,
+    "residual_customer_rows": 0,
+    "evidence_sha256": "9e2e32cd20e6fb88d51943e0741e8de5d306ab27c9a83e3742672c1268dc719c"
+  },
+  "real_money_certification": {
+    "certified": false,
+    "latest_reconcile_run_id": 34776077757,
+    "existing_founding_intent_count": 2,
+    "paid_intent_count": 0,
+    "older_intent_provider_status": "cancelled",
+    "certification_intent_provider_status": "created",
+    "paid_entitlements_fail_closed": true,
+    "duplicate_checkout_created": false
+  },
+  "authority": {
+    "live_trading_authorized": false,
+    "profitability": "NOT_YET_CERTIFIED",
+    "superiority": "NOT_CERTIFIED",
+    "real_money_e2e_certified": false,
+    "pr_merge_authorized": false,
+    "sealed_main_change_authorized": false
+  },
+  "launch_decision": {
+    "free_signup_and_authenticated_customer_access": "READY",
+    "free_account_product_surfaces": "READY",
+    "public_customer_funnel": "READY",
+    "paid_checkout_topology": "READ_ONLY_VERIFIED",
+    "checkout_failclosed_behavior": "E2E_VERIFIED",
+    "paid_checkout_initiation": "INTENTIONALLY_NOT_EXECUTED",
+    "paid_plan_entitlement_policy": "PROVIDER_VERIFIED_ONLY",
+    "internal_real_money_certification": "NOT_EARNED",
+    "live_trading": "NOT_AUTHORIZED"
+  },
+  "raw_credentials_published": false,
+  "raw_customer_identifiers_published": false
+}
