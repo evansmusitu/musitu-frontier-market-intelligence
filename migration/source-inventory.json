@@ -41,13 +41,12 @@
       "commit": "282cee0abe411012f0bc95b2d5eea5fd609cefb7"
     }
   ],
-  "verified_destination_before_manifest": "3aa4aadd6a394919ee8984126a89eb97fdd52aaa",
+  "verified_destination_before_manifest": "eea506395a1548f249d99471a7f347c0478ae37a",
   "counts": {
-    "IMPORTED_EXACT_BLOB": 159,
+    "IMPORTED_EXACT_BLOB": 167,
     "PUBLIC_REDACTED_EVIDENCE": 1,
-    "BLOCKED_UPSTREAM_CHUNK_INTEGRITY": 10,
-    "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE": 2,
-    "HELD_LEGACY_ARCHIVE_UNREVIEWED": 13
+    "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE": 10,
+    "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE": 7
   },
   "records": [
     {
@@ -3233,7 +3232,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_00.b64",
@@ -3247,7 +3248,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_01.b64",
@@ -3261,7 +3264,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_02.b64",
@@ -3275,7 +3280,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_03.b64",
@@ -3289,7 +3296,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_04.b64",
@@ -3303,7 +3312,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_05.b64",
@@ -3317,7 +3328,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_06.b64",
@@ -3331,7 +3344,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_07a.b64",
@@ -3345,7 +3360,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "deploy_payload/fmi_v9_4_control/chunk_07b.b64",
@@ -3359,7 +3376,9 @@
         }
       ],
       "destination": null,
-      "status": "BLOCKED_UPSTREAM_CHUNK_INTEGRITY"
+      "status": "SUPERSEDED_BY_HASH_VERIFIED_V94_SOURCE",
+      "recovery_manifest": "deploy_payload/fmi_v9_4_control/RECOVERY.json",
+      "recovery_note": "Four payload files match the original V9.4 manifest SHA-256; damaged original compressed transport retained upstream, not certified."
     },
     {
       "path": "scripts/fmi_v9_1_control_model.py",
@@ -3824,8 +3843,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/000.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 0,
+      "archive_length": 12000
     },
     {
       "path": "fmi_launch_transport_v2/009.b64",
@@ -3839,7 +3860,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 124000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 14000,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport_v2/010.b64",
@@ -3853,7 +3880,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 138000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 8585,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport_v2/011.b64",
@@ -3866,8 +3899,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/011.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 152000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/012.b64",
@@ -3880,8 +3915,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/012.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 166000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/013.b64",
@@ -3894,8 +3931,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/013.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 180000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/014.b64",
@@ -3908,8 +3947,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/014.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 194000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/015.b64",
@@ -3922,8 +3963,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/015.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 208000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/016.b64",
@@ -3936,8 +3979,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/016.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 222000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/017.b64",
@@ -3951,7 +3996,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 236000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 14000,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport_v2/018.b64",
@@ -3965,7 +4016,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 250000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 14000,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": "fmi_launch_transport_v2/019.b64",
@@ -3978,8 +4035,10 @@
           "commit": "9152dae31b4d4cbcac8259a970559b13126dbe8f"
         }
       ],
-      "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "destination": "migration/legacy-launch-fragments/fmi_launch_transport_v2/019.b64",
+      "status": "IMPORTED_EXACT_BLOB",
+      "archive_offset": 264000,
+      "archive_length": 14000
     },
     {
       "path": "fmi_launch_transport_v2/020.b64",
@@ -3993,7 +4052,13 @@
         }
       ],
       "destination": null,
-      "status": "HELD_LEGACY_ARCHIVE_UNREVIEWED"
+      "status": "SUPERSEDED_BY_VERIFIED_PRIVATE_LAUNCH_ARCHIVE",
+      "recovery": {
+        "archive_base64_offset": 278000,
+        "canonical_slice_length": 14000,
+        "original_fragment_bytes": 34740,
+        "reason": "Original fragment does not match authoritative archive; do not reconstruct from it."
+      }
     },
     {
       "path": ".github/workflows/fmi-handoff-export-1914.yml",
@@ -4075,5 +4140,16 @@
     "status": "NOT_IMPORTED; original, prefix and suffix checks failed"
   },
   "production_cutover": false,
-  "source_deleted": false
+  "source_deleted": false,
+  "launch_archive_recovery": {
+    "filename": "MUSITU_FMI_COMMERCIAL_GLOBAL_LAUNCH_TRANSPORT_20260912_AUTHORITATIVE.zip",
+    "size": 333338,
+    "sha256": "c87009714befc99bf88c81d882aad98cd7dfa32f56daa1c8a5a38987f978152e",
+    "zip_entries": 169,
+    "manifest_controlled_files": 168,
+    "verified_manifest_files": 168,
+    "classification": "EPHEMERAL_PRIVATE_GITHUB_ACTIONS_TRANSPORT",
+    "authority": "PAPER_SHADOW_ONLY",
+    "retained": "Owner's private Google Drive; not republished as a whole."
+  }
 }
